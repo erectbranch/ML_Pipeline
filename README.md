@@ -21,6 +21,16 @@
 
 <br/>
 
+## 🚩 정리한 문서 목록
+
+### 📬 Model Serving
+
+- [TensorFlow Serving Part I](https://github.com/erectbranch/ML_Pipeline/tree/master/ch08/summary01)
+
+- [TensorFlow Serving Part II](https://github.com/erectbranch/ML_Pipeline/tree/master/ch08/summary02)
+
+<br/>
+
 ## :mag: 목차
 
 ### CHAPTER 1 머신러닝 파이프라인
