@@ -29,6 +29,10 @@
 
 - [TensorFlow Serving Part II](https://github.com/erectbranch/ML_Pipeline/tree/master/ch08/summary02)
 
+- [PyTorch Serving: REST API](https://github.com/erectbranch/ML_Pipeline/tree/master/ch08/PyTorch)
+
+- [Microsoft Azure Serving: REST API](https://github.com/erectbranch/ML_Pipeline/tree/master/ch08/AzureML_REST_API)
+
 <br/>
 
 ## :mag: 목차

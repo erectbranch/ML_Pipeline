@@ -109,7 +109,7 @@ tensorflow_model_server --port=8500 \
 
 - `model_config_list`라는 key 아래 `config` 딕셔너리들이 포함된다. 
 
-```JSON
+```
 model_config_list {
     config {
         name: 'my_model'
@@ -126,7 +126,7 @@ model_config_list {
 
 이때 특정 model version들만 load하고 싶다면 `config` 딕셔너리 내부에 다음과 같이 `model_version_policy` 쌍을 작성해 주면 된다.
 
-```JSON
+```
 ...
     # 사용할 수 있는 모든 version을 load
     config {
@@ -136,7 +136,7 @@ model_config_list {
     }
 ```
 
-```JSON
+```
     # 특정 version만 load
     config {
         name: 'another_model'
@@ -152,7 +152,7 @@ model_config_list {
 
 특정 version에 label을 붙여서 관리할 수도 있다.
 
-```JSON
+```
     # 특정 version만 load
     config {
         name: 'another_model'
@@ -274,7 +274,7 @@ http://{HOST}:{PORT}/v1/models/{MODEL_NAME}/versions/{MODEL_VERSION}:{VERB}
 
 request payload는 주로 JSON 형식으로 작성한다. 가장 기본적인 형태는 다음과 같다.
 
-```JSON
+```
 {
     "signature_name": <string>,
     "instances": <value>
@@ -285,7 +285,7 @@ request payload는 주로 JSON 형식으로 작성한다. 가장 기본적인 �
 
 여러 data sample을 제출하고 싶다면, 다음과 같이 `instances` key 아래 list들로 제출할 수 있다.
 
-```JSON
+```
 {
     "instances": [
         {
@@ -302,7 +302,7 @@ request payload는 주로 JSON 형식으로 작성한다. 가장 기본적인 �
 
 만약 단 하나의 input만 request하고 싶다면 `instances` 대신 `inputs`만 작성하면 된다. 단, 이 둘을 동시에 혼용해서 쓰면 안 되므로 주의하자.
 
-```JSON
+```
 {
     "inputs": [1, 2, 3, 4]
 }
@@ -366,7 +366,7 @@ def metadata_rest_request(model_name, host="localhost",
 
 해당 request를 받은 server는 model 사양과 정의를 각각 `model_spec`, `metadata` 딕셔너리로 반환한다.
 
-```JSON
+```
 {
     "model_spec": {
         "name": "complaints_classification",

@@ -248,7 +248,7 @@ saved_models/
 
 위 정보를 포함하는 signature 딕셔너리 예시를 보자.
 
-```JSON
+```
 {
     'inputs': {'input_image': <tf.Tensor 'input_image:0' shape=(None, 224, 224, 3) dtype=float32>},
     'outputs': {'class_ids': <tf.Tensor 'class_ids:0' shape=(None,) dtype=int64>}
@@ -301,7 +301,7 @@ signature는 크게 세 가지 유형으로 나뉜다.
 
 default signature에 해당되며 가장 유연한 signature 방법인 predict부터 살펴보자. 아래는 NLP model에서 input과 output을 받기 위해 정의한 signature다.
 
-```JSON
+```
 signature_def: {
     key  : "prediction_signature"
     value: {
@@ -341,7 +341,7 @@ signature_def: {
 
 두 번째 signature 방법은 classify이다. 하나의 inputs와 하나 이상의 outputs로 구성된다.
 
-```JSON
+```
 signature_def: {
     key  : "classification_signature"
     value: {
@@ -380,7 +380,7 @@ signature_def: {
 
 마지막 signature 방법은 regress이다. 하나의 inputs와 하나의 outputs로 구성된다. 이름 그대로 regression model용으로 설계되었다.
 
-```JSON
+```
 signature_def: {
     key  : "regression_signature"
     value: {
