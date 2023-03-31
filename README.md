@@ -27,6 +27,10 @@
 
 - [TensorFlow Serving Part I](https://github.com/erectbranch/ML_Pipeline/tree/master/ch08/summary01)
 
+  > Python API(flask)를 이용한 delivery와 단점
+
+  > TensorFlow Serving: Keras/TF model로 내보내기, model signature(predict, classify, regress), model 검사하기(saved_model_cli)
+
 - [TensorFlow Serving Part II](https://github.com/erectbranch/ML_Pipeline/tree/master/ch08/summary02)
 
 - [PyTorch Serving: REST API](https://github.com/erectbranch/ML_Pipeline/tree/master/ch08/PyTorch)
